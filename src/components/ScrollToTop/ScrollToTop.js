@@ -2,13 +2,17 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  // Extracts pathname property(key) from an object
   const { pathname } = useLocation();
 
-  // Automatically scrolls to top whenever pathname changes
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const timer = setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100); // Adjust the delay as needed (in milliseconds)
+
+    return () => clearTimeout(timer); // Cleanup the timer on unmount
   }, [pathname]);
+
+  return null;
 };
 
 export default ScrollToTop;

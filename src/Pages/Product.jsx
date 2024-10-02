@@ -12,10 +12,6 @@ function Product() {
   const { productId } = useParams();
   const product = all_product.find((e) => e.id === Number(productId));
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [productId]);
-
   return (
     <div>
       <Breadcrumbs product={product} />
