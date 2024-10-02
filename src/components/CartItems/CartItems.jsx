@@ -15,13 +15,11 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import abc from "../Assets/product_33.png";
 import { Button } from "../ui/button";
 import { ChevronDown, ChevronUp, ShoppingCart, X } from "lucide-react";
 import { useContext } from "react";
 import { ShopContext } from "@/Context/ShopContext";
 import TotalCalculator from "./TotalCalculator";
-import { Separator } from "../ui/separator";
 import { Link } from "react-router-dom";
 
 function CartItems() {

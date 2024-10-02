@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
-  // console.log(item.id);
-
   return (
     <div className="rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
       <Link to={`/product/${item.id}`}>

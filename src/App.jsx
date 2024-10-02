@@ -13,14 +13,15 @@ import men_banner from "./components/Assets/banner_men.png";
 import women_banner from "./components/Assets/banner_women.png";
 import kids_banner from "./components/Assets/banner_kids.png";
 import { Toaster } from "sonner";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <div className="flex w-full flex-col">
           <NewNav />
-          {/* <Navbar /> */}
           <Routes>
             <Route path="/" element={<Shop />} />
             <Route

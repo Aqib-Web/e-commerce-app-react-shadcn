@@ -1,4 +1,3 @@
-// import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { Store, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {

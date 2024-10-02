@@ -42,8 +42,6 @@ export function NewNav() {
   ];
 
   return (
-    // <div className="flex min-h-screen w-full flex-col">
-    // </div>
     <header className="sticky top-0 flex h-20 items-center gap-4 bg-white px-4 lg:px-40 z-40">
       <div className="hidden md:block flex md:w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
         <Link
