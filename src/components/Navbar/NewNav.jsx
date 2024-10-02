@@ -104,6 +104,16 @@ export function NewNav() {
         </SheetContent>
       </Sheet>
 
+      <div className="block md:hidden lg:hidden flex md:w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-semibold md:text-base"
+        >
+          <Store className="h-6 w-6" />
+          <span className="px-2 text-lg">E-Store</span>
+        </Link>
+      </div>
+
       <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 justify-end">
         <Link to="/login">
           <Button className="rounded-full">Login</Button>
