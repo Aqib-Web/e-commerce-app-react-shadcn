@@ -110,7 +110,7 @@ export function NewNav() {
           className="flex items-center gap-2 font-semibold md:text-base"
         >
           <Store className="h-6 w-6" />
-          <span className="px-2 text-lg">E-Store</span>
+          <span className="px-2 text-lg whitespace-nowrap">E-Store</span>
         </Link>
       </div>
 
