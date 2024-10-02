@@ -51,7 +51,7 @@ export function NewNav() {
           className="flex items-center gap-2 font-semibold md:text-base"
         >
           <Store className="h-6 w-6" />
-          <span className="px-2 text-lg">E-Store</span>
+          <span className="px-2 text-lg whitespace-nowrap">E-Store</span>
         </Link>
       </div>
 
@@ -75,7 +75,7 @@ export function NewNav() {
             <a className="sr-only">Toggle navigation menu</a>
           </Button>
         </SheetTrigger>
-        <SheetContent side="left">
+        <SheetContent side="left" onOpenAutoFocus={(e) => e.preventDefault()}>
           <SheetHeader>
             <SheetTitle></SheetTitle>
             <SheetDescription></SheetDescription>
@@ -87,7 +87,7 @@ export function NewNav() {
               onClick={() => setSheetOpen(false)}
             >
               <Store className="h-6 w-6" />
-              <span className="px-2">E-Store</span>
+              <span className="px-2 whitespace-nowrap">E-Store</span>
             </Link>
 
             {navbarLinks.map((item) => (

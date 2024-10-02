@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label";
 function LoginSignup() {
   return (
     <div>
-      <div className="py-32">
+      <div className="pt-8 pb-24 lg:pt-24 lg:p-28">
         <Card className="mx-auto max-w-sm">
           <CardHeader>
             <CardTitle className="text-xl">Sign Up</CardTitle>

@@ -15,7 +15,9 @@ const Item = ({ item }) => {
           style={{ aspectRatio: "1", objectFit: "cover" }}
         />
         <div className="p-4">
-          <h3 className="text-base font-semibold">{item.name}</h3>
+          <h3 className="text-base font-semibold text-sm lg:text-base">
+            {item.name}
+          </h3>
           <div className="flex items-center gap-2 mt-2">
             <span className="text-primary line-through text-sm">
               ${item.old_price}
