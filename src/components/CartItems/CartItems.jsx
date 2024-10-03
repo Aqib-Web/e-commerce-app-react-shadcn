@@ -131,13 +131,19 @@ function CartItems() {
               <>
                 {/* <Separator/> */}
                 <div className="flex flex-col items-center space-y-4 mt-2 ">
-                  <h3 className="text-lg font-semibold text-gray-500">
+                  <h3 className="text-md font-medium text-gray-500">
                     Your Cart is Empty
                   </h3>
-                  <ShoppingCart className="w-12 h-12 text-gray-500" />
+                  <ShoppingCart className="w-10 h-10 text-gray-400" />
                   <div className="flex justify-center space-x-4">
                     <Link to="/#popular-section">
-                      <Button className="text-sm rounded-full">
+                      <Button
+                        className=" rounded-full mt-2"
+                        style={{
+                          background:
+                            "linear-gradient(to right, #c0392b, #8e44ad)",
+                        }}
+                      >
                         Start Shopping
                       </Button>
                     </Link>
