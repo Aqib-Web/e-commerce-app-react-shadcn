@@ -12,7 +12,7 @@ const ProductDisplay = ({ product }) => {
   const navigate = useNavigate();
 
   const showToast = () =>
-    toast("Item Added!", {
+    toast("✅ Item Added!", {
       description: "Check your cart for details.",
       action: {
         label: "View Cart",

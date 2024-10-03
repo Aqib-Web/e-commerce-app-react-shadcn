@@ -136,7 +136,7 @@ function CartItems() {
                   </h3>
                   <ShoppingCart className="w-12 h-12 text-gray-500" />
                   <div className="flex justify-center space-x-4">
-                    <Link to="/">
+                    <Link to="/#popular-section">
                       <Button className="text-sm rounded-full">
                         Start Shopping
                       </Button>

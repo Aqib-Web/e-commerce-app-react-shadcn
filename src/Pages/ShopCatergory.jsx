@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import { Button } from "@/components/ui/button";
 import capitalizeFirstLetter from "@/Js/captializeWord";
 import SortButton from "@/components/SortButton/SortButton";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 function ShopCatergory({ banner, category }) {
   const { all_product } = useContext(ShopContext);
@@ -21,6 +22,9 @@ function ShopCatergory({ banner, category }) {
   // Function to toggle show all products
   const toggleShowAll = () => {
     setShowAll((prev) => !prev);
+    if (showAll) {
+      window.scrollTo({ top: 150, behavior: "smooth" });
+    }
   };
 
   return (

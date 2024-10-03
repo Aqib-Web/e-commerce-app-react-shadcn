@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 import hero_image from "../Assets/hero_image.png";
 
 const Hero = () => {
+  const scrollToPopular = () => {
+    const popularSection = document.getElementById("popular-section");
+    if (popularSection) {
+      popularSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div
@@ -30,7 +37,14 @@ const Hero = () => {
             </p>
             <div className="flex justify-center lg:justify-start">
               <Link to="/">
-                <Button size={"lg"} className="w-48 h-12 primary">
+                <Button
+                  size={"lg"}
+                  className="w-48 h-12 primary"
+                  onClick={scrollToPopular}
+                  style={{
+                    background: "linear-gradient(to right, #c0392b, #8e44ad)",
+                  }}
+                >
                   Shop Now
                 </Button>
               </Link>

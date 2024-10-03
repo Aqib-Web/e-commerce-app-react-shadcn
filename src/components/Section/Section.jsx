@@ -9,7 +9,7 @@ const shuffleArray = (array) => {
   return array;
 };
 
-const Section = ({ data, title, category, limit, excludeId, children }) => {
+const Section = ({ data, title, category, limit, excludeId, children, id }) => {
   const [shuffledData, setShuffledData] = useState([]);
 
   // Shuffle data only once when the component mounts
@@ -24,7 +24,7 @@ const Section = ({ data, title, category, limit, excludeId, children }) => {
   const limitedData = limit ? shuffledData.slice(0, limit) : shuffledData;
 
   return (
-    <section className="container mx-auto px-4 py-12">
+    <section id={id} className="container mx-auto px-4 py-12">
       <div className="flex flex-col items-center gap-2 pb-20">
         <div className="h-2 w-16 bg-gray-900" />
         <h2 className="text-2xl font-bold tracking-tight md:text-3xl pt-2">
